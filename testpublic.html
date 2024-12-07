@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testpublic.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <title>Geolocation Example</title>
+</head>
+<body>
+    <div  id="info-section">
+        <h2>Understanding APIs</h2>
+        <p>An API (Application Programming Interface) allows different applications to communicate with each other. APIs enable access to data and functionality of another application, service, or device, making it easy to integrate various features like location data, weather updates, and more.</p>
+        
+        <p>This page uses the Geolocation API to find your location and the Tomorrow.io API to fetch weather data for that location. APIs like these are essential for building responsive, data-driven applications.</p>
+    
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/s7wmiS2mSXY" title="What is an API?" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+        <button id="getLocationButton">Get Location</button>
+  
+
+        <button id="reset">reset</button>  
+
+    </div>
+
+    <div id="loader" style="display:none;">Loading...</div>
+    <div id="output"></div>
+    <div id="apioutput"></div>    
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
